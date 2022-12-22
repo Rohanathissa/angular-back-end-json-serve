@@ -1,0 +1,5 @@
+<div class="task-item" [ngClass]="{reminder: taskObj.remaind}" (dblclick)="onUpdate(taskObj)">
+    <div class="text">{{taskObj.text}}</div>
+    <div class="text">{{taskObj.day}} 
+    <fa-icon [icon]="faTimes" (click)=onDelete(taskObj)></fa-icon></div>
+</div>

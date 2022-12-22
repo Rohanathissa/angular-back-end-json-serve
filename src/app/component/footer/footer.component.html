@@ -1,0 +1,12 @@
+<!-- <footer *ngIf="hasFooterRout('about')">
+    <p> Copyright & Copy; 2022 </p>
+    <a routerLink="/about">About</a>
+</footer> -->
+<footer >
+    <div *ngIf="hasFooterRout('/about');then content else other_content">here is ignored</div>
+    <p> Copyright @Copy; Raw Product </p>
+    <ng-template #content>    
+        <a routerLink="/about">About</a>
+    </ng-template>
+    <ng-template #other_content></ng-template>
+</footer>

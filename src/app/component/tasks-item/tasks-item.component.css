@@ -1,0 +1,12 @@
+.task-item{    padding: 10px;
+    background-color: beige;
+    border: solid #fafafa 10px;
+}
+fa-icon{
+    float: right;
+    color: red;
+}
+
+.task-item.reminder{
+    border-left: 10px solid green;
+}

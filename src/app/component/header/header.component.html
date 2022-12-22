@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 *ngIf="hasRouter('/about')"> About Us </h1>
+    <h1 *ngIf="hasRouter('/')"> Anguler Json Serve </h1>
+    <app-button *ngIf="hasRouter('/')" class="app-button" 
+    color="{{showAddTask ? 'red': 'green'}}" 
+    text="{{showAddTask ? 'Close': 'Add'}}" 
+    (addTaskBtn)="addTaskBtn()"></app-button>
+</div>

@@ -1,0 +1,11 @@
+
+<div class="add-tasks">
+    <app-add-task (onAddTask)="addTask($event)">
+    </app-add-task>
+</div>
+<div class="tasks" *ngFor="let task of tasks">
+    <app-tasks-item [taskObj]="task" 
+    (onDaleteTask)="daleteTask(task)"
+    (onUpdateTask)="updateTask(task)">
+    </app-tasks-item>
+</div>
